@@ -12,3 +12,5 @@ before_script: # => 6
     
 script: # => 7
    - python manage.py test
+   - coverage run --source=polls manage.py test
+   - coveralls

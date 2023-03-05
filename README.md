@@ -1,0 +1,1 @@
+### DJangoAuthenticationApp [![Build Status](https://app.travis-ci.com/AlfaroukSaleh/-swe1-app.svg?branch=main)](https://app.travis-ci.com/AlfaroukSaleh/-swe1-app)

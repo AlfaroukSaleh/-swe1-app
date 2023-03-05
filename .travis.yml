@@ -11,7 +11,8 @@ install: # => 5
 before_script: # => 6
     
 script: # => 7
-   - python manage.py test
+   - black --check .
+   - flake8 .
    - coverage run --source=polls manage.py test
    
 after-success:

@@ -1,7 +1,6 @@
 language: python # => 1
 python: # => 2
    - "3.7"
-   - "3.8"
 
 env: # => 4
    -DJANGO=2.2

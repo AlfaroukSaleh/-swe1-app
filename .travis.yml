@@ -17,3 +17,12 @@ script: # => 7
    
 after-success:
    - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $SecretKeyId
+  secret_access_key: $SecretKey
+  region: "us-west-2"
+  app: "app-mysite"
+  env: "env-mysite"
+  bucket_name: "elasticbeanstalk-us-west-2-124178988437"

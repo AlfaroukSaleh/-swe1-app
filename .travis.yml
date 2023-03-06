@@ -21,7 +21,9 @@ after-success:
 before_deploy: "echo 'ready?'"
 deploy:
   on:
-    branch: main
+    branch: 
+       - main
+       - configure-ci
   provider: elasticbeanstalk
   access_key_id: $SecretKeyId
   secret_access_key: $SecretKey

@@ -18,7 +18,10 @@ script: # => 7
 after-success:
    - coveralls
 
+before_deploy: "echo 'ready?'"
 deploy:
+  on:
+    branch: main
   provider: elasticbeanstalk
   access_key_id: $SecretKeyId
   secret_access_key: $SecretKey
@@ -26,3 +29,5 @@ deploy:
   app: "app-mysite"
   env: "env-mysite"
   bucket_name: "elasticbeanstalk-us-west-2-124178988437"
+
+after_deploy: "echo 'Done'"

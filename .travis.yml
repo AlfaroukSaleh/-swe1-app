@@ -20,6 +20,8 @@ after-success:
 
 before_deploy: "echo 'ready?'"
 deploy:
+  on:
+    branch: main
   provider: elasticbeanstalk
   access_key_id: $SecretKeyId
   secret_access_key: $SecretKey
